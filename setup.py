@@ -1,7 +1,7 @@
 import os
 from setuptools import setup
 
-README = open(os.path.join(os.path.dirname(__file__), 'docs/README.rst')).read()
+README = open(os.path.join(os.path.dirname(__file__), 'README.rst')).read()
 
 DESCRIPTION = """
 Customer references as homepage slideshow
