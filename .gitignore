@@ -4,3 +4,5 @@
 .DS_Store
 .coverage
 .ropeproject
+/dist
+/*.egg-info

@@ -17,7 +17,8 @@
 
     <div class="reference-header">
 		<h3 class="reference-name">{{ reference.name }}</h3>
-		{% if reference.date %}<span class="reference-date text-muted">- {{ reference.date }}</span>{% endif %}
+        {% if reference.subtitle %}<div class="reference-subtitle text-muted">{{ reference.subtitle }}</div>{% endif %}
+		{% if reference.date %}<div class="reference-date text-muted">{{ reference.date }}</div>{% endif %}
 	</div>
 	<div class="reference-body">
 		{{ reference.content|safe }}

@@ -32,6 +32,7 @@ class Reference(Orderable):
     page = models.ForeignKey(References)
     content = models.TextField(_("Content"))
     name = models.CharField(_("Name"), max_length=32)
+    subtitle = models.CharField(_("Subtitle"), max_length=32, null=True, blank=True)
     date = models.DateField(_("Date of realization"), null=True, blank=True)
     image = models.ImageField(upload_to="references", null=True, blank=True)
 
