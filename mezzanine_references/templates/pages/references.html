@@ -1,5 +1,5 @@
 {% extends "pages/page.html" %}
-{% load mezzanine_tags staticfiles %}
+{% load mezzanine_tags staticfiles i18n %}
 
 {% block extra_css %}
 <link rel="stylesheet" href="{% static "css/mezzanine-references.css" %}">
@@ -7,7 +7,7 @@
 
 {% block main %}
 
-<H2>Reference klientů</h2>
+<h2>{{ page.title }}</h2>
 
 {% for reference in page.references.reference_set.all %}
 <div class="reference">
