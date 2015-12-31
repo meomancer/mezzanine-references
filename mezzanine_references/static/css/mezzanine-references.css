@@ -1,17 +1,8 @@
-.references-slideshow{
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,c0d5e5+52,ffffff+99 */
-    background: #ffffff; /* Old browsers */
-    background: -moz-linear-gradient(top,  #ffffff 0%, #c0d5e5 52%, #ffffff 99%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(52%,#c0d5e5), color-stop(99%,#ffffff)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,  #ffffff 0%,#c0d5e5 52%,#ffffff 99%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top,  #ffffff 0%,#c0d5e5 52%,#ffffff 99%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top,  #ffffff 0%,#c0d5e5 52%,#ffffff 99%); /* IE10+ */
-    background: linear-gradient(to bottom,  #ffffff 0%,#c0d5e5 52%,#ffffff 99%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+.references-slideshow {
     padding-top: 50px;
 }
 
-.references-slideshow .reference{
+.references-slideshow .reference {
     width: 1000px;
     margin: 0 auto;
 }
@@ -27,7 +18,7 @@
     border-bottom: none;
 }
 
-.reference img{
+.reference img {
     width: 150px;
     height: auto;
     float: left;
@@ -40,11 +31,11 @@
     margin-left: 50px;
 }
 
-.reference .reference-date{
+.reference .reference-date {
     color: #2f5c82;
 }
 
-.reference-footer a{
+.reference-footer a {
     color: white;
     font-size: 13px;
     display: block;
@@ -57,25 +48,26 @@
     background-color: #3a7fbb;
 }
 
-.reference-footer a:hover{
+.reference-footer a:hover {
     background-color: #3074b0;
 }
 
-.reference-content{
+.reference-content {
     width: 700px;
+    height: 150px;
     padding-left: 50px;
     float: left;
 }
 
-.carousel-indicators{
+.references-slideshow .carousel-indicators {
     position: relative;
     margin-top: 50px;
 }
 
-.carousel-indicators li{
-    border-color: #3a7fbb;
+.references-slideshow .carousel-indicators li {
+    border: solid 2px #3a7fbb;
 }
 
-.carousel-indicators li.active{
+.references-slideshow .carousel-indicators li.active {
     background: #3a7fbb !important;
 }
