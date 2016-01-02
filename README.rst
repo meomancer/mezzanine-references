@@ -10,6 +10,16 @@ Quick start
 2. Add ``mezzanine_references`` in your ``INSTALLED_APPS``
 3. Run ``python manage.py syncdb`` to create new database tables
 
+Optionally include ``mezzanine-references.css`` in your ``base.html`` template
+or customize slideshow on your own.
+
+.. code-block:: python
+
+    {% block extra_css %}
+    # Load stylesheet (optional)
+    <link rel="stylesheet" href="{% static "css/mezzanine-references.css" %}">
+    {% endblock %}
+
 Usage
 -----
 
@@ -21,11 +31,6 @@ References as slideshow
 .. code-block:: python
 
     {% load references_tags %}
-
-    {% block extra_css %}
-    # Load stylesheet (optional)
-    <link rel="stylesheet" href="{% static "css/mezzanine-references.css" %}">
-    {% endblock %}
 
     # Create slideshow of reference page with title "Reference"
     {% references_slideshow title="Reference" %}
