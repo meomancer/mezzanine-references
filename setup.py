@@ -22,7 +22,10 @@ setup(
     download_url='https://pypi.python.org/pypi/mezzanine-references',
     author='Filip Pytloun',
     author_email='filip@pytloun.cz',
-    requires=['mezzanine'],
+    install_requires=[
+        'django-modeltranslation'],
+    requires=[
+        'mezzanine'],
     classifiers=[
         'Development Status :: 4 - Beta',
         'Environment :: Web Environment',
